@@ -2,6 +2,7 @@
 //
 
 #include "item.h"
+#include "chainLightning.h"
 #include "gravityBomb.h"
 #include "hasteElixir.h"
 #include "xpMagnet.h"
@@ -39,4 +40,8 @@ int main()
    GravityBomb gbomb;
    std::cout << "\n" << gbomb << std::endl;
    gbomb.use();
+
+   ChainLightning clight;
+   std::cout << "\n" << clight << std::endl;
+   clight.use();
 }

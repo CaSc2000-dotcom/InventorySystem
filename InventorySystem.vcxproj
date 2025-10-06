@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="chainLightning.cpp" />
     <ClCompile Include="ghostVeil.cpp" />
     <ClCompile Include="gravityBomb.cpp" />
     <ClCompile Include="hasteElixir.cpp" />
@@ -138,6 +139,7 @@
     <ClCompile Include="xpMagnet.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="chainLightning.h" />
     <ClInclude Include="ghostVeil.h" />
     <ClInclude Include="gravityBomb.h" />
     <ClInclude Include="hasteElixir.h" />
