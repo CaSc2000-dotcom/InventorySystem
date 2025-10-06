@@ -31,7 +31,7 @@ public:
         std::string iconPath = "", int value = -1, float magnitude = -1.0f) 
       : itemID(itemID), displayName(displayName), description(description), 
         iconPath(iconPath), value(value), magnitude(magnitude) {}
-   ~Item() {}
+   virtual ~Item() {}
 
    // Getters
    int getItemID() const { return itemID; }
@@ -40,9 +40,9 @@ public:
    std::string getIconPath() const { return iconPath; }
    int getValue() const { return value; }
 
-   virtual ItemsType getType() const { return INVALID; }
+   virtual ItemsType getType() const = 0;
 
-   virtual void use() {}
+   virtual void use() = 0;
 
 protected:
    int itemID;
@@ -87,8 +87,5 @@ class PotionItem : public Item
 {
 public:
    PotionItem(float areaOfEffect = 0.0f, float magnitude = 0.0f)
-      : areaOfEffect(areaOfEffect), Item() {
-   }
-protected:
-   float areaOfEffect;
+      : Item() {}
 };
