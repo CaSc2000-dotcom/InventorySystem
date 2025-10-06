@@ -45,6 +45,9 @@
     <ClCompile Include="chainLightning.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="flashFreeze.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="item.h">
@@ -72,6 +75,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="chainLightning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flashFreeze.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

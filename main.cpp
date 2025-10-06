@@ -2,6 +2,7 @@
 //
 
 #include "item.h"
+#include "flashFreeze.h"
 #include "chainLightning.h"
 #include "gravityBomb.h"
 #include "hasteElixir.h"
@@ -44,4 +45,8 @@ int main()
    ChainLightning clight;
    std::cout << "\n" << clight << std::endl;
    clight.use();
+
+   FlashFreeze ffreeze;
+   std::cout << "\n" << ffreeze << std::endl;
+   ffreeze.use();
 }
