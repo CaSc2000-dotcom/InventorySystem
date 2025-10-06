@@ -11,7 +11,7 @@
 
  /*********************************************
   * GravityBomb
-  * Grants the player temporary invulnerability when used
+  * Draws in enemies within a radius, then deals splash damage
   *********************************************/
 class GravityBomb : public ExactorItem
 {
