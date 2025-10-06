@@ -27,6 +27,9 @@
     <ClCompile Include="healthPotion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="flimsyShield.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="item.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="healthPotion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flimsyShield.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
