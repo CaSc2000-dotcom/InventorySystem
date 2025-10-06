@@ -2,6 +2,7 @@
 //
 
 #include "item.h"
+#include "xpMagnet.h"
 #include "ghostVeil.h"
 #include "flimsyShield.h"
 #include "healthPotion.h"
@@ -24,4 +25,8 @@ int main()
    GhostVeil gveil;
    std::cout << "\n" << gveil << std::endl;
    gveil.use();
+
+   XPMagnet xpmag;
+   std::cout << "\n" << xpmag << std::endl;
+   xpmag.use();
 }

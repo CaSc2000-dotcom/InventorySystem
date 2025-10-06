@@ -133,6 +133,7 @@
     <ClCompile Include="item.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="flimsyShield.cpp" />
+    <ClCompile Include="xpMagnet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ghostVeil.h" />
@@ -140,6 +141,7 @@
     <ClInclude Include="inventory.h" />
     <ClInclude Include="item.h" />
     <ClInclude Include="flimsyShield.h" />
+    <ClInclude Include="xpMagnet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
