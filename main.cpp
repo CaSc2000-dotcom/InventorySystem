@@ -1,5 +1,11 @@
-// InventorySystem.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/***********************************************************************
+ * Source File:
+ *    MAIN
+ * Author:
+ *    Caleb Schmid
+ * Summary:
+ *    Directs the program
+ ************************************************************************/
 
 #include "inventory.h"
 #include "item.h"
