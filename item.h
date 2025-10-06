@@ -9,6 +9,7 @@
 
 #pragma once
 
+#include <iostream>
 #include <string>
 
 enum ItemsType
@@ -44,6 +45,8 @@ public:
 
    virtual void use() = 0;
 
+   friend std::ostream& operator<<(std::ostream& os, const Item& pt);
+
 protected:
    int itemID;
    std::string displayName;
@@ -60,7 +63,7 @@ protected:
 class PowerupItem : public Item
 {
 public:
-   PowerupItem(float duration = 0.0f, float magnitude = 0.0f) 
+   PowerupItem(float duration = -1.0f) 
              : duration(duration), Item() {}
 protected:
    float duration;
@@ -73,7 +76,7 @@ protected:
 class ExactorItem : public Item
 {
 public:
-   ExactorItem(float areaOfEffect = 0.0f, float magnitude = 0.0f)
+   ExactorItem(float areaOfEffect = -1.0f)
              : areaOfEffect(areaOfEffect), Item() {}
 protected:
    float areaOfEffect;
@@ -86,6 +89,6 @@ protected:
 class PotionItem : public Item
 {
 public:
-   PotionItem(float areaOfEffect = 0.0f, float magnitude = 0.0f)
+   PotionItem()
       : Item() {}
 };
