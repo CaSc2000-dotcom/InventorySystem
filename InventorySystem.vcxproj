@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ghostVeil.cpp" />
+    <ClCompile Include="gravityBomb.cpp" />
     <ClCompile Include="hasteElixir.cpp" />
     <ClCompile Include="healthPotion.cpp" />
     <ClCompile Include="inventory.cpp" />
@@ -138,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ghostVeil.h" />
+    <ClInclude Include="gravityBomb.h" />
     <ClInclude Include="hasteElixir.h" />
     <ClInclude Include="healthPotion.h" />
     <ClInclude Include="inventory.h" />

@@ -39,6 +39,9 @@
     <ClCompile Include="hasteElixir.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="gravityBomb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="item.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="hasteElixir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gravityBomb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
