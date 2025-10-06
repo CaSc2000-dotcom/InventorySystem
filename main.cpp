@@ -2,6 +2,7 @@
 //
 
 #include "item.h"
+#include "hasteElixir.h"
 #include "xpMagnet.h"
 #include "ghostVeil.h"
 #include "flimsyShield.h"
@@ -29,4 +30,8 @@ int main()
    XPMagnet xpmag;
    std::cout << "\n" << xpmag << std::endl;
    xpmag.use();
+
+   HasteElixir helix;
+   std::cout << "\n" << helix << std::endl;
+   helix.use();
 }
