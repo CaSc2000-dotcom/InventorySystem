@@ -4,7 +4,7 @@
  * Author:
  *    Caleb Schmid
  * Summary:
- *    Derived from Item, represents a Flimsy Shield item
+ *    Derived from PowerupItem, represents a flimsy shield item
  ***********************************************************************/
 
 #include "item.h"

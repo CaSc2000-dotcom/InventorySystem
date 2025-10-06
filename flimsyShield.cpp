@@ -4,14 +4,14 @@
  * Author:
  *    Caleb Schmid
  * Summary:
- *    Derived from Item, represents a flimsy shield item
+ *    Derived from PowerupItem, represents a flimsy shield item
  ***********************************************************************/
 
 #include "flimsyShield.h"
 
 FlimsyShield::FlimsyShield() : PowerupItem()
 {
-   itemID = 31;
+   itemID = 23;
    displayName = "Flimsy Shield";
    iconPath = "assets/icons/flimsy_shield.png";
    value = 16;
