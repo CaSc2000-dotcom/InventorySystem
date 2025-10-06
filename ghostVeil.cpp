@@ -8,6 +8,7 @@
  ***********************************************************************/
 
 #include "ghostVeil.h"
+#include <iostream>
 
 GhostVeil::GhostVeil() : PowerupItem()
 {

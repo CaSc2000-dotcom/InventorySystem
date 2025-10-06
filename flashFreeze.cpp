@@ -7,8 +7,8 @@
  *    Derived from PowerupItem, represents a flash freeze item
  ***********************************************************************/
 
-
 #include "flashFreeze.h"
+#include <iostream>
 
 FlashFreeze::FlashFreeze() : ExactorItem()
 {

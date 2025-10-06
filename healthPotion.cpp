@@ -8,6 +8,7 @@
  ***********************************************************************/
 
 #include "healthPotion.h"
+#include <iostream>
 
 HealthPotion::HealthPotion() : PotionItem()
 {
@@ -22,5 +23,6 @@ HealthPotion::HealthPotion() : PotionItem()
 
 void HealthPotion::use()
 {
-   std::cout << "You used a " << displayName << " and restored " << magnitude << " health!" << std::endl;
+   std::cout << "You used a " << displayName << " and restored " 
+             << magnitude << " health!" << std::endl;
 }

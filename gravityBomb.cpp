@@ -8,6 +8,7 @@
  ***********************************************************************/
 
 #include "gravityBomb.h"
+#include <iostream>
 
 GravityBomb::GravityBomb() : ExactorItem()
 {
@@ -19,12 +20,12 @@ GravityBomb::GravityBomb() : ExactorItem()
    areaOfEffect = 6.0f;
 
    description = "Draws in enemies within " + std::to_string(static_cast<int>(areaOfEffect))
-      + " meters, then deals " + std::to_string(static_cast<int>(magnitude))
-      + " splash damage.";
+               + " meters, then deals " + std::to_string(static_cast<int>(magnitude))
+               + " splash damage.";
 }
 
 void GravityBomb::use()
 {
    std::cout << "You used a " << displayName << " and dealt "
-      << magnitude << " damage to each sucked in enemies!" << std::endl;
+             << magnitude << " damage to each sucked in enemies!" << std::endl;
 }

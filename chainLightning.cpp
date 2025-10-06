@@ -8,6 +8,7 @@
  ***********************************************************************/
 
 #include "chainLightning.h"
+#include <iostream>
 
 ChainLightning::ChainLightning() : ExactorItem()
 {

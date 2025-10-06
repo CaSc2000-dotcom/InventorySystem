@@ -8,6 +8,7 @@
  ***********************************************************************/
 
 #include "flimsyShield.h"
+#include <iostream>
 
 FlimsyShield::FlimsyShield() : PowerupItem()
 {

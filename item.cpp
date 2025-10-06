@@ -8,6 +8,7 @@
  ***********************************************************************/
 
 #include "item.h"
+#include <iostream>
 
 std::ostream& operator<<(std::ostream& out, const Item& item)
 {

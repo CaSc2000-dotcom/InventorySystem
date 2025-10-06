@@ -8,6 +8,7 @@
  ***********************************************************************/
 
 #include "xpMagnet.h"
+#include <iostream>
 
 XPMagnet::XPMagnet() : PowerupItem()
 {

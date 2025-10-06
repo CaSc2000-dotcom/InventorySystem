@@ -8,6 +8,7 @@
  ***********************************************************************/
 
 #include "hasteElixir.h"
+#include <iostream>
 
 HasteElixir::HasteElixir() : PowerupItem()
 {
@@ -19,12 +20,12 @@ HasteElixir::HasteElixir() : PowerupItem()
    duration = 7.0f;
 
    description = "Grants a boost of " + std::to_string(static_cast<int>(magnitude))
-      + "x movement haste for " + std::to_string(static_cast<int>(duration))
-      + " seconds.";
+               + "x movement haste for " + std::to_string(static_cast<int>(duration))
+               + " seconds.";
 }
 
 void HasteElixir::use()
 {
    std::cout << "You used a " << displayName << " and now move faster for "
-      << duration << " seconds!" << std::endl;
+             << duration << " seconds!" << std::endl;
 }
