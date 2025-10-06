@@ -13,6 +13,9 @@
 #include "healthPotion.h"
 #include <iostream>
 
+/*********************************************
+ * Prints all available items and their stats
+ *********************************************/
 void printAllItems()
 {
    HealthPotion hpot;
@@ -40,6 +43,9 @@ void printAllItems()
    std::cout << "\n" << ffreeze;
 }
 
+/*********************************************
+ * Main function to run the inventory system
+ *********************************************/
 int main()
 {
    std::cout << "---------------------------------------------\n";
@@ -56,12 +62,13 @@ int main()
    size_t choice = -1;
    while (choice != 0)
    {
-      std::cout << "\nWhat will you do? (Enter a number [0-4])\n"
+      std::cout << "\nWhat will you do? (Enter a number [0-5])\n"
                 << "--------------------------------\n"
                 << "1. View Adventurer's Knapsack contents\n"
                 << "2. Add Item\n"
                 << "3. Remove Item\n"
-                << "4. Display Items and Item stats\n"
+                << "4. Clear all Items\n"
+                << "5. Display Items and Item stats\n"
                 << "0. Quit\n"
                 << "> ";
       std::cin >> choice;
@@ -88,11 +95,6 @@ int main()
          }
          case 2:
          {
-            if (inventory.isFull())
-            {
-               std::cout << "Your Adventurer's Knapsack is full! Remove an item before adding another.\n";
-               break;
-            }
             std::cout << "\nChoose an item to add:\n"
                       << "1. Health Potion\n"
                       << "2. Flimsy Shield\n"
@@ -152,6 +154,17 @@ int main()
             break;
          }
          case 4:
+         {
+            if (inventory.isEmpty())
+            {
+               std::cout << "Your Adventurer's Knapsack is already empty!\n";
+               break;
+            }
+            inventory.clear();
+            std::cout << "All items cleared from your Adventurer's Knapsack.\n";
+            break;
+         }
+         case 5:
          {
             std::cout << "\nAvailable Items and their stats:\n";
             printAllItems();
