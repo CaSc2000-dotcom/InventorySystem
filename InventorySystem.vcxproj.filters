@@ -24,12 +24,18 @@
     <ClCompile Include="inventory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="healthPotion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="item.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="healthPotion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
