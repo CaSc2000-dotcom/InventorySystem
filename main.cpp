@@ -2,8 +2,9 @@
 //
 
 #include "item.h"
-#include "healthPotion.h"
+#include "ghostVeil.h"
 #include "flimsyShield.h"
+#include "healthPotion.h"
 #include <iostream>
 
 int main()
@@ -19,4 +20,8 @@ int main()
    FlimsyShield spot;
    std::cout << "\n" << spot << std::endl;
    spot.use();
+
+   GhostVeil gveil;
+   std::cout << "\n" << gveil << std::endl;
+   gveil.use();
 }
